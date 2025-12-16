@@ -58,6 +58,7 @@ main {
 #formulario h1 {
   text-align: center;
   margin-bottom: 20px;
+  color: #5f2c82;
 }
 
 #formulario p {
@@ -66,6 +67,7 @@ main {
 
 .campo {
   background-color: #5f2c82;
+  border: 2px solid #5f2c82;
   height: 40px;
   border-radius: 10px;
   margin: 5px 0px;
@@ -73,13 +75,30 @@ main {
 
 .campo i {
   color: #fff;
-  line-height: 30px;
-  padding: 0px 10px;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
 }
 
 .campo i:hover {
   transform: scale(1.1);
 }
+
+.campo input {
+  background-color: #51b0ad;
+  font-size: 1em;
+  width: calc(100% - 45px);
+  transform: translateY(-13px);
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.campo input:focus-within {
+  background-color: #fff;
+}
+
 .campo label {
   display: none;
 }
